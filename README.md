@@ -21,7 +21,7 @@ Frontend (Vue 3) показывает таблицу, поддерживает r
 
 ### Требования
 - .NET SDK 8
-- Node.js 18+ (рекомендуется)
+- Node.js 18+ (&npm) (рекомендуется)
 
 ### Backend
 Из корня backend
@@ -29,4 +29,13 @@ Frontend (Vue 3) показывает таблицу, поддерживает r
 ```bash
 dotnet restore
 dotnet build -c Release
-dotnet run --project backend/Api/Api.csproj
+dotnet run --project Api/Api.csproj
+```
+
+### Frontend
+Из корня frontend
+
+```bash
+npm i
+npm run dev
+```
