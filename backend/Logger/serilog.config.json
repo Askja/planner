@@ -1,0 +1,69 @@
+{
+  "Logging": {
+    "Correlation": {
+      "HeaderName": "X-Correlation-ID"
+    },
+    "RequestLogging": {
+      "Enable": true,
+      "MessageTemplate": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+      "SlowRequestThresholdMs": 1000
+    },
+    "ExceptionHandling": {
+      "IncludeExceptionDetails": false
+    }
+  },
+  "Serilog": {
+    "Using": [
+      "Serilog.Sinks.Console",
+      "Serilog.Sinks.File",
+      "Serilog.Sinks.Async",
+      "Serilog.Enrichers.Environment",
+      "Serilog.Enrichers.Process",
+      "Serilog.Enrichers.Thread",
+      "Serilog.Exceptions"
+    ],
+    "MinimumLevel": {
+      "Default": "Information",
+      "Override": {
+        "Microsoft": "Warning",
+        "Microsoft.AspNetCore": "Warning",
+        "Microsoft.EntityFrameworkCore": "Warning",
+        "System": "Warning"
+      }
+    },
+    "Enrich": [
+      "FromLogContext",
+      "WithMachineName",
+      "WithEnvironmentUserName",
+      "WithProcessId",
+      "WithProcessName",
+      "WithThreadId",
+      "WithExceptionDetails"
+    ],
+    "Properties": {
+      "service": "planner-api"
+    },
+    "WriteTo": [
+      {
+        "Name": "Async",
+        "Args": {
+          "configure": [
+            {
+              "Name": "Console"
+            },
+            {
+              "Name": "File",
+              "Args": {
+                "path": "logs/log-.json",
+                "rollingInterval": "Day",
+                "retainedFileCountLimit": 14,
+                "shared": true,
+                "formatter": "Serilog.Formatting.Compact.CompactJsonFormatter, Serilog.Formatting.Compact"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "start-server-and-test": "^2.1.3"
+  }
+}

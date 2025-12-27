@@ -1,0 +1,1304 @@
+{
+  "@t": "2025-12-26T21:06:29.2851872Z",
+  "@mt": "Запись данных в БД...",
+  "SourceContext": "Data.Seed.DataSeeder",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 14836,
+  "ProcessName": "Api",
+  "ThreadId": 1,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:14:41.9882613Z",
+  "@mt": "Запись данных в БД...",
+  "SourceContext": "Data.Seed.DataSeeder",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 26476,
+  "ProcessName": "Api",
+  "ThreadId": 1,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:14:42.1575401Z",
+  "@mt": "Успешная вставка: skus={skus} skuSubs={subs}",
+  "skus": 3,
+  "subs": 9,
+  "SourceContext": "Data.Seed.DataSeeder",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 26476,
+  "ProcessName": "Api",
+  "ThreadId": 1,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:14:42.9903621Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "2.5197"
+  ],
+  "@tr": "af5422b1fdaa28854f3c122515801dcc",
+  "@sp": "a220288ad4db01ff",
+  "requestHost": "localhost:5256",
+  "requestScheme": "http",
+  "remoteIp": "::1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "",
+  "contentType": null,
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/todos",
+  "StatusCode": 404,
+  "Elapsed": 2.5197,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OF4QABP3:00000001",
+  "traceId": "0HNI4OF4QABP3:00000001",
+  "correlationId": "0HNI4OF4QABP3:00000001",
+  "RequestId": "0HNI4OF4QABP3:00000001",
+  "ConnectionId": "0HNI4OF4QABP3",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 26476,
+  "ProcessName": "Api",
+  "ThreadId": 8,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:15:48.2745788Z",
+  "@mt": "Запись данных в БД...",
+  "SourceContext": "Data.Seed.DataSeeder",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 25176,
+  "ProcessName": "Api",
+  "ThreadId": 1,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:15:48.4432953Z",
+  "@mt": "Успешная вставка: skus={skus} skuSubs={subs}",
+  "skus": 3,
+  "subs": 9,
+  "SourceContext": "Data.Seed.DataSeeder",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 25176,
+  "ProcessName": "Api",
+  "ThreadId": 1,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:15:54.7784651Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "23.9606"
+  ],
+  "@l": "Error",
+  "@x": "DryIoc.ContainerException: code: Error.RecursiveDependencyDetected;\r\nmessage: Recursive dependency is detected when resolving \r\nData.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton <--recursive\r\n  in ScopedOrSingleton Data.Repositories.PlanningY1Repository: Data.Interfaces.IPlanningY1Repository as parameter \"planningY1Repository\" FactoryID=131 Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton\r\n  in Singleton {Lifespan=1000} Data.Providers.PlannerSnapshotProvider: Data.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" FactoryID=107 <--recursive\r\n  in resolution root ScopedOrSingleton Services.Services.PlannerService: Services.Interfaces.IPlannerService FactoryID=141\r\n  from container with scope {Name=null}\r\n with Rules with {TrackingDisposableTransients, SelectLastRegisteredFactory} and without {ThrowOnRegisteringDisposableTransient, VariantGenericTypesInResolvedCollection}\r\n with FactorySelector=SelectLastRegisteredFactory\r\n with Made={FactoryMethod=ConstructorWithResolvableArguments, ParameterSelector=<custom>}.\r\n   at DryIoc.Throw.It(Int32 error, Object arg0, Object arg1, Object arg2, Object arg3) in /_/src/DryIoc/Container.cs:line 15958\r\n   at DryIoc.Request.WithResolvedFactory(Factory factory, Boolean skipRecursiveDependencyCheck, Boolean skipCaptiveDependencyCheck, Boolean copyRequest) in /_/src/DryIoc/Container.cs:line 10925\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11867\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.Container.ResolveAndCache(Int32 serviceTypeHash, Type serviceType, IfUnresolved ifUnresolved) in /_/src/DryIoc/Container.cs:line 401\r\n   at DryIoc.Container.Resolve(Type serviceType, IfUnresolved ifUnresolved) in /_/src/DryIoc/Container.cs:line 369\r\n   at DryIoc.Microsoft.DependencyInjection.DryIocServiceProvider.GetRequiredService(Type serviceType) in /_/src/DryIoc.Microsoft.DependencyInjection/DryIocAdapter.cs:line 498\r\n   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)\r\n   at lambda_method247(Closure, Object, HttpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "1dcff7b4387428d27e3e0f49257f9e74",
+  "@sp": "70c86afbff33f049",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=Total&level=Sku&level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 23.9606,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OFQ8S7BM:00000001",
+  "traceId": "0HNI4OFQ8S7BM:00000001",
+  "correlationId": "29ee4621-071b-420c-b0f9-59377c8b0dbe",
+  "RequestId": "0HNI4OFQ8S7BM:00000001",
+  "ConnectionId": "0HNI4OFQ8S7BM",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 25176,
+  "ProcessName": "Api",
+  "ThreadId": 8,
+  "ExceptionDetail": {
+    "HResult": -2146233079,
+    "Message": "code: Error.RecursiveDependencyDetected;\r\nmessage: Recursive dependency is detected when resolving \r\nData.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton <--recursive\r\n  in ScopedOrSingleton Data.Repositories.PlanningY1Repository: Data.Interfaces.IPlanningY1Repository as parameter \"planningY1Repository\" FactoryID=131 Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton\r\n  in Singleton {Lifespan=1000} Data.Providers.PlannerSnapshotProvider: Data.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" FactoryID=107 <--recursive\r\n  in resolution root ScopedOrSingleton Services.Services.PlannerService: Services.Interfaces.IPlannerService FactoryID=141\r\n  from container with scope {Name=null}\r\n with Rules with {TrackingDisposableTransients, SelectLastRegisteredFactory} and without {ThrowOnRegisteringDisposableTransient, VariantGenericTypesInResolvedCollection}\r\n with FactorySelector=SelectLastRegisteredFactory\r\n with Made={FactoryMethod=ConstructorWithResolvableArguments, ParameterSelector=<custom>}.",
+    "Source": "DryIoc",
+    "TargetSite": "System.Object It(Int32, System.Object, System.Object, System.Object, System.Object)",
+    "ErrorName": "RecursiveDependencyDetected",
+    "Type": "DryIoc.ContainerException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:15:54.8199823Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "DryIoc.ContainerException: code: Error.RecursiveDependencyDetected;\r\nmessage: Recursive dependency is detected when resolving \r\nData.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton <--recursive\r\n  in ScopedOrSingleton Data.Repositories.PlanningY1Repository: Data.Interfaces.IPlanningY1Repository as parameter \"planningY1Repository\" FactoryID=131 Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton\r\n  in Singleton {Lifespan=1000} Data.Providers.PlannerSnapshotProvider: Data.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" FactoryID=107 <--recursive\r\n  in resolution root ScopedOrSingleton Services.Services.PlannerService: Services.Interfaces.IPlannerService FactoryID=141\r\n  from container with scope {Name=null}\r\n with Rules with {TrackingDisposableTransients, SelectLastRegisteredFactory} and without {ThrowOnRegisteringDisposableTransient, VariantGenericTypesInResolvedCollection}\r\n with FactorySelector=SelectLastRegisteredFactory\r\n with Made={FactoryMethod=ConstructorWithResolvableArguments, ParameterSelector=<custom>}.\r\n   at DryIoc.Throw.It(Int32 error, Object arg0, Object arg1, Object arg2, Object arg3) in /_/src/DryIoc/Container.cs:line 15958\r\n   at DryIoc.Request.WithResolvedFactory(Factory factory, Boolean skipRecursiveDependencyCheck, Boolean skipCaptiveDependencyCheck, Boolean copyRequest) in /_/src/DryIoc/Container.cs:line 10925\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11867\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.Container.ResolveAndCache(Int32 serviceTypeHash, Type serviceType, IfUnresolved ifUnresolved) in /_/src/DryIoc/Container.cs:line 401\r\n   at DryIoc.Container.Resolve(Type serviceType, IfUnresolved ifUnresolved) in /_/src/DryIoc/Container.cs:line 369\r\n   at DryIoc.Microsoft.DependencyInjection.DryIocServiceProvider.GetRequiredService(Type serviceType) in /_/src/DryIoc.Microsoft.DependencyInjection/DryIocAdapter.cs:line 498\r\n   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)\r\n   at lambda_method247(Closure, Object, HttpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "1dcff7b4387428d27e3e0f49257f9e74",
+  "@sp": "70c86afbff33f049",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OFQ8S7BM:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OFQ8S7BM",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 25176,
+  "ProcessName": "Api",
+  "ThreadId": 8,
+  "ExceptionDetail": {
+    "HResult": -2146233079,
+    "Message": "code: Error.RecursiveDependencyDetected;\r\nmessage: Recursive dependency is detected when resolving \r\nData.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton <--recursive\r\n  in ScopedOrSingleton Data.Repositories.PlanningY1Repository: Data.Interfaces.IPlanningY1Repository as parameter \"planningY1Repository\" FactoryID=131 Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton\r\n  in Singleton {Lifespan=1000} Data.Providers.PlannerSnapshotProvider: Data.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" FactoryID=107 <--recursive\r\n  in resolution root ScopedOrSingleton Services.Services.PlannerService: Services.Interfaces.IPlannerService FactoryID=141\r\n  from container with scope {Name=null}\r\n with Rules with {TrackingDisposableTransients, SelectLastRegisteredFactory} and without {ThrowOnRegisteringDisposableTransient, VariantGenericTypesInResolvedCollection}\r\n with FactorySelector=SelectLastRegisteredFactory\r\n with Made={FactoryMethod=ConstructorWithResolvableArguments, ParameterSelector=<custom>}.",
+    "Source": "DryIoc",
+    "TargetSite": "System.Object It(Int32, System.Object, System.Object, System.Object, System.Object)",
+    "ErrorName": "RecursiveDependencyDetected",
+    "Type": "DryIoc.ContainerException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:15:54.8239758Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "DryIoc.ContainerException: code: Error.RecursiveDependencyDetected;\r\nmessage: Recursive dependency is detected when resolving \r\nData.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton <--recursive\r\n  in ScopedOrSingleton Data.Repositories.PlanningY1Repository: Data.Interfaces.IPlanningY1Repository as parameter \"planningY1Repository\" FactoryID=131 Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton\r\n  in Singleton {Lifespan=1000} Data.Providers.PlannerSnapshotProvider: Data.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" FactoryID=107 <--recursive\r\n  in resolution root ScopedOrSingleton Services.Services.PlannerService: Services.Interfaces.IPlannerService FactoryID=141\r\n  from container with scope {Name=null}\r\n with Rules with {TrackingDisposableTransients, SelectLastRegisteredFactory} and without {ThrowOnRegisteringDisposableTransient, VariantGenericTypesInResolvedCollection}\r\n with FactorySelector=SelectLastRegisteredFactory\r\n with Made={FactoryMethod=ConstructorWithResolvableArguments, ParameterSelector=<custom>}.\r\n   at DryIoc.Throw.It(Int32 error, Object arg0, Object arg1, Object arg2, Object arg3) in /_/src/DryIoc/Container.cs:line 15958\r\n   at DryIoc.Request.WithResolvedFactory(Factory factory, Boolean skipRecursiveDependencyCheck, Boolean skipCaptiveDependencyCheck, Boolean copyRequest) in /_/src/DryIoc/Container.cs:line 10925\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11867\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.ReflectionFactory.CreateExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 13113\r\n   at DryIoc.Factory.GetExpressionOrDefault(Request request) in /_/src/DryIoc/Container.cs:line 11952\r\n   at DryIoc.Container.ResolveAndCache(Int32 serviceTypeHash, Type serviceType, IfUnresolved ifUnresolved) in /_/src/DryIoc/Container.cs:line 401\r\n   at DryIoc.Container.Resolve(Type serviceType, IfUnresolved ifUnresolved) in /_/src/DryIoc/Container.cs:line 369\r\n   at DryIoc.Microsoft.DependencyInjection.DryIocServiceProvider.GetRequiredService(Type serviceType) in /_/src/DryIoc.Microsoft.DependencyInjection/DryIocAdapter.cs:line 498\r\n   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)\r\n   at lambda_method247(Closure, Object, HttpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "1dcff7b4387428d27e3e0f49257f9e74",
+  "@sp": "70c86afbff33f049",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OFQ8S7BM:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OFQ8S7BM",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 25176,
+  "ProcessName": "Api",
+  "ThreadId": 8,
+  "ExceptionDetail": {
+    "HResult": -2146233079,
+    "Message": "code: Error.RecursiveDependencyDetected;\r\nmessage: Recursive dependency is detected when resolving \r\nData.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton <--recursive\r\n  in ScopedOrSingleton Data.Repositories.PlanningY1Repository: Data.Interfaces.IPlanningY1Repository as parameter \"planningY1Repository\" FactoryID=131 Flags=DryIoc.RequestFlags.IsSingletonOrDependencyOfSingleton\r\n  in Singleton {Lifespan=1000} Data.Providers.PlannerSnapshotProvider: Data.Interfaces.IPlannerSnapshotProvider as parameter \"snapshotProvider\" FactoryID=107 <--recursive\r\n  in resolution root ScopedOrSingleton Services.Services.PlannerService: Services.Interfaces.IPlannerService FactoryID=141\r\n  from container with scope {Name=null}\r\n with Rules with {TrackingDisposableTransients, SelectLastRegisteredFactory} and without {ThrowOnRegisteringDisposableTransient, VariantGenericTypesInResolvedCollection}\r\n with FactorySelector=SelectLastRegisteredFactory\r\n with Made={FactoryMethod=ConstructorWithResolvableArguments, ParameterSelector=<custom>}.",
+    "Source": "DryIoc",
+    "TargetSite": "System.Object It(Int32, System.Object, System.Object, System.Object, System.Object)",
+    "ErrorName": "RecursiveDependencyDetected",
+    "Type": "DryIoc.ContainerException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:21:02.7320295Z",
+  "@mt": "Запись данных в БД...",
+  "SourceContext": "Data.Seed.DataSeeder",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 1,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:21:02.9049634Z",
+  "@mt": "Успешная вставка: skus={skus} skuSubs={subs}",
+  "skus": 3,
+  "subs": 9,
+  "SourceContext": "Data.Seed.DataSeeder",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 1,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:21:09.7115229Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "281.0536"
+  ],
+  "@tr": "9a12a17a893b8f2a5fd60fd8442f4412",
+  "@sp": "0ae75de970fc9abc",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=Total&level=Sku&level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 200,
+  "Elapsed": 281.0536,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGM:00000001",
+  "traceId": "0HNI4OIO1SQGM:00000001",
+  "correlationId": "848b4a15-05a2-407a-90df-6188cbd4b55b",
+  "RequestId": "0HNI4OIO1SQGM:00000001",
+  "ConnectionId": "0HNI4OIO1SQGM",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 8,
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:46.8993160Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "6.2887"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "2e07a45bfcd9fd9bab4c320f2be7176f",
+  "@sp": "7582c2d5cef985da",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=Sku&level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 6.2887,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGN:00000001",
+  "traceId": "0HNI4OIO1SQGN:00000001",
+  "correlationId": "f79384cb-44e3-4c57-adf4-787831212a32",
+  "RequestId": "0HNI4OIO1SQGN:00000001",
+  "ConnectionId": "0HNI4OIO1SQGN",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:46.9307974Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "2e07a45bfcd9fd9bab4c320f2be7176f",
+  "@sp": "7582c2d5cef985da",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGN:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGN",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:46.9340479Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "2e07a45bfcd9fd9bab4c320f2be7176f",
+  "@sp": "7582c2d5cef985da",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGN:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGN",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:48.4583919Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.9335"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "ba1eafb6e50145d4232ad8955826bc5d",
+  "@sp": "cd4b1bf4aa0de514",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=Sku&level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.9335,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGO:00000001",
+  "traceId": "0HNI4OIO1SQGO:00000001",
+  "correlationId": "d9e041b0-e62b-4225-8ff1-7cdf42766017",
+  "RequestId": "0HNI4OIO1SQGO:00000001",
+  "ConnectionId": "0HNI4OIO1SQGO",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:48.4602854Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "ba1eafb6e50145d4232ad8955826bc5d",
+  "@sp": "cd4b1bf4aa0de514",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGO:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGO",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:48.4610606Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "ba1eafb6e50145d4232ad8955826bc5d",
+  "@sp": "cd4b1bf4aa0de514",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGO:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGO",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:49.3556905Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.8945"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "4833c64e3f482f93acc094366b0abfbd",
+  "@sp": "53d2ab45b7e60c77",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=Sku&level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.8945,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGP:00000001",
+  "traceId": "0HNI4OIO1SQGP:00000001",
+  "correlationId": "1af6e1df-7ad6-4542-941a-739c9bc4a61b",
+  "RequestId": "0HNI4OIO1SQGP:00000001",
+  "ConnectionId": "0HNI4OIO1SQGP",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:49.3563194Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "4833c64e3f482f93acc094366b0abfbd",
+  "@sp": "53d2ab45b7e60c77",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGP:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGP",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:49.3568375Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "4833c64e3f482f93acc094366b0abfbd",
+  "@sp": "53d2ab45b7e60c77",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGP:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGP",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 14,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:50.7604112Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.5817"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "c1bdd4b104bd07c9e1a5c8392ff9875f",
+  "@sp": "da53a4308ddd7c7b",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.5817,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGQ:00000001",
+  "traceId": "0HNI4OIO1SQGQ:00000001",
+  "correlationId": "d0fa0682-a91a-4773-a6b2-6351e1efe82f",
+  "RequestId": "0HNI4OIO1SQGQ:00000001",
+  "ConnectionId": "0HNI4OIO1SQGQ",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:50.7614451Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "c1bdd4b104bd07c9e1a5c8392ff9875f",
+  "@sp": "da53a4308ddd7c7b",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGQ:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGQ",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:50.7617770Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "c1bdd4b104bd07c9e1a5c8392ff9875f",
+  "@sp": "da53a4308ddd7c7b",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGQ:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGQ",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:51.6741726Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.6726"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "a498cc3ce8c0130bf594cb1d419bb387",
+  "@sp": "49c72eb9982060c1",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.6726,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGR:00000001",
+  "traceId": "0HNI4OIO1SQGR:00000001",
+  "correlationId": "c1831ba3-3f12-495c-b603-d72a21a4d494",
+  "RequestId": "0HNI4OIO1SQGR:00000001",
+  "ConnectionId": "0HNI4OIO1SQGR",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:51.6747748Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "a498cc3ce8c0130bf594cb1d419bb387",
+  "@sp": "49c72eb9982060c1",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGR:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGR",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:51.6751599Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "a498cc3ce8c0130bf594cb1d419bb387",
+  "@sp": "49c72eb9982060c1",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGR:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGR",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:52.3192089Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.6663"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "05c2e72cbc20a395e62becb559a3e3e4",
+  "@sp": "1d45eacff446e0ed",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.6663,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGS:00000001",
+  "traceId": "0HNI4OIO1SQGS:00000001",
+  "correlationId": "46beb73b-4162-4b4f-88df-96c0eebe49b5",
+  "RequestId": "0HNI4OIO1SQGS:00000001",
+  "ConnectionId": "0HNI4OIO1SQGS",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:52.3197545Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "05c2e72cbc20a395e62becb559a3e3e4",
+  "@sp": "1d45eacff446e0ed",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGS:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGS",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:52.3201478Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "05c2e72cbc20a395e62becb559a3e3e4",
+  "@sp": "1d45eacff446e0ed",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGS:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGS",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:53.1575075Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.4606"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "42bf85a8d6170c738b719fd5e578abf2",
+  "@sp": "02db056372762aab",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.4606,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGT:00000001",
+  "traceId": "0HNI4OIO1SQGT:00000001",
+  "correlationId": "f3b92b61-509d-4c5d-b44c-46fc0c6c0bf1",
+  "RequestId": "0HNI4OIO1SQGT:00000001",
+  "ConnectionId": "0HNI4OIO1SQGT",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:53.1580139Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "42bf85a8d6170c738b719fd5e578abf2",
+  "@sp": "02db056372762aab",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGT:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGT",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:53.1584389Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "42bf85a8d6170c738b719fd5e578abf2",
+  "@sp": "02db056372762aab",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGT:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGT",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:53.6351887Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.7200"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "2f27d0460704973327b35889532ba89f",
+  "@sp": "8e89060b405bda20",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.72,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGU:00000001",
+  "traceId": "0HNI4OIO1SQGU:00000001",
+  "correlationId": "b37a7f50-8fb9-4a88-817c-3e9031b2cf3f",
+  "RequestId": "0HNI4OIO1SQGU:00000001",
+  "ConnectionId": "0HNI4OIO1SQGU",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:53.6357746Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "2f27d0460704973327b35889532ba89f",
+  "@sp": "8e89060b405bda20",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGU:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGU",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:53.6363086Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "2f27d0460704973327b35889532ba89f",
+  "@sp": "8e89060b405bda20",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGU:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGU",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:54.4136572Z",
+  "@mt": "HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс",
+  "@r": [
+    "0.4830"
+  ],
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "eb71f45e5e29d8cd84bc3e502be9c9cc",
+  "@sp": "13db5bf397279630",
+  "requestHost": "localhost:5000",
+  "requestScheme": "http",
+  "remoteIp": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+  "queryString": "?level=SkuSub",
+  "contentType": "application/json",
+  "contentLength": null,
+  "RequestMethod": "GET",
+  "RequestPath": "/api/planner",
+  "StatusCode": 500,
+  "Elapsed": 0.483,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "requestId": "0HNI4OIO1SQGV:00000001",
+  "traceId": "0HNI4OIO1SQGV:00000001",
+  "correlationId": "65b9ecbc-f7bb-442c-a04a-21945dbb5029",
+  "RequestId": "0HNI4OIO1SQGV:00000001",
+  "ConnectionId": "0HNI4OIO1SQGV",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:54.4143608Z",
+  "@mt": "An unhandled exception has occurred while executing the request.",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "eb71f45e5e29d8cd84bc3e502be9c9cc",
+  "@sp": "13db5bf397279630",
+  "EventId": {
+    "Id": 1,
+    "Name": "UnhandledException"
+  },
+  "SourceContext": "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware",
+  "RequestId": "0HNI4OIO1SQGV:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGV",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{
+  "@t": "2025-12-26T21:22:54.4148734Z",
+  "@mt": "Unhandled exception for {method} {path}",
+  "@l": "Error",
+  "@x": "System.ObjectDisposedException: Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.\r\n   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()\r\n   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()\r\n   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()\r\n   at Data.Abstractions.BaseRepository`1.get_Set() in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 12\r\n   at Data.Abstractions.BaseRepository`1.BuildQuery(Expression`1 filter, Boolean asNoTracking, Expression`1[] includes) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Abstractions\\BaseRepository.cs:line 60\r\n   at Data.Repositories.SkuRepository.GetAllAsync(Boolean asNoTracking, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Repositories\\SkuRepository.cs:line 10\r\n   at Data.Providers.PlannerSnapshotProvider.GetAsync(CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Data\\Providers\\PlannerSnapshotProvider.cs:line 31\r\n   at Services.Services.PlannerService.GetPlannerAsync(IReadOnlyCollection`1 skuSubNames, IReadOnlyCollection`1 levels, CancellationToken ct) in C:\\Backup\\FromD\\dev\\planner\\backend\\Services\\Services\\PlannerService.cs:line 20\r\n   at Program.<>c.<<<Main>$>b__0_0>d.MoveNext() in C:\\Backup\\FromD\\dev\\planner\\backend\\Api\\Program.cs:line 35\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)\r\n   at Logger.Middleware.SlowRequestLoggingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\SlowRequestLoggingMiddleware.cs:line 16\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)\r\n   at Logger.Middleware.CorrelationIdMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\\Backup\\FromD\\dev\\planner\\backend\\Logger\\Middleware\\CorrelationIdMiddleware.cs:line 22\r\n   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.InterfaceMiddlewareBinder.<>c__DisplayClass2_0.<<CreateMiddleware>b__0>d.MoveNext()\r\n--- End of stack trace from previous location ---\r\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)",
+  "@tr": "eb71f45e5e29d8cd84bc3e502be9c9cc",
+  "@sp": "13db5bf397279630",
+  "method": "GET",
+  "path": "/api/planner",
+  "SourceContext": "GlobalExceptionHandler",
+  "RequestId": "0HNI4OIO1SQGV:00000001",
+  "RequestPath": "/api/planner",
+  "ConnectionId": "0HNI4OIO1SQGV",
+  "MachineName": "DESKTOP-4OU1KE1",
+  "EnvironmentUserName": "DESKTOP-4OU1KE1\\Askja",
+  "ProcessId": 7096,
+  "ProcessName": "Api",
+  "ThreadId": 13,
+  "ExceptionDetail": {
+    "HResult": -2146232798,
+    "Message": "Cannot access a disposed context instance. A common cause of this error is disposing a context instance that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling 'Dispose' on the context instance, or wrapping it in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.\r\nObject name: 'DataContext'.",
+    "Source": "Microsoft.EntityFrameworkCore",
+    "TargetSite": "Void CheckDisposed()",
+    "ObjectName": "DataContext",
+    "Type": "System.ObjectDisposedException"
+  },
+  "service": "planner-api",
+  "application": "Api",
+  "environment": "Development",
+  "assembly": "Api"
+}
+{"@t":"2025-12-27T06:28:30.6939761Z","@mt":"Запись данных в БД...","SourceContext":"Data.Seed.DataSeeder","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":1,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T06:28:30.8671681Z","@mt":"Успешная вставка: skus={skus} skuSubs={subs}","skus":3,"subs":9,"SourceContext":"Data.Seed.DataSeeder","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":1,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T06:29:21.7158731Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["223.2739"],"@tr":"2aaa61395bcdbe258667a13da4ffc27a","@sp":"1400389e4c14bf8d","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":223.2739,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M2:00000001","traceId":"0HNI5252LI4M2:00000001","correlationId":"be80342d-2b7a-4fec-80d2-402856011d2d","RequestId":"0HNI5252LI4M2:00000001","ConnectionId":"0HNI5252LI4M2","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":13,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T06:29:38.0378196Z","@mt":"Planning updated: skuSubId={skuSubId} units={units} amount={amount}","@tr":"5741b031e3cb0ce39943a910b2ba7964","@sp":"7b046377e5f7bf7e","skuSubId":102,"units":20.42,"amount":42.8820,"SourceContext":"Services.Services.PlannerService","RequestId":"0HNI5252LI4M3:00000001","RequestPath":"/api/planner","ConnectionId":"0HNI5252LI4M3","requestId":"0HNI5252LI4M3:00000001","traceId":"0HNI5252LI4M3:00000001","correlationId":"c5cf45b1-4fb0-43d9-9eb5-4f65d69ff167","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":13,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T06:29:38.0382451Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["138.2637"],"@tr":"5741b031e3cb0ce39943a910b2ba7964","@sp":"7b046377e5f7bf7e","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"","contentType":"application/json","contentLength":38,"RequestMethod":"PATCH","RequestPath":"/api/planner","StatusCode":204,"Elapsed":138.2637,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M3:00000001","traceId":"0HNI5252LI4M3:00000001","correlationId":"c5cf45b1-4fb0-43d9-9eb5-4f65d69ff167","RequestId":"0HNI5252LI4M3:00000001","ConnectionId":"0HNI5252LI4M3","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":13,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T06:29:38.1665166Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["7.2037"],"@tr":"e0e08b51cfe49c9857be020771590b1f","@sp":"dfa300fe3aa4af16","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":7.2037,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M4:00000001","traceId":"0HNI5252LI4M4:00000001","correlationId":"9387d566-8f9f-4e5d-896f-7da019e3f540","RequestId":"0HNI5252LI4M4:00000001","ConnectionId":"0HNI5252LI4M4","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":13,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:01:33.6167577Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["3.1598"],"@tr":"16df109ec4cabca73ee32023598df72e","@sp":"c62ca015ec9f18a4","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":3.1598,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M5:00000001","traceId":"0HNI5252LI4M5:00000001","correlationId":"3cb18490-3a85-42cd-8e74-9aade893b47c","RequestId":"0HNI5252LI4M5:00000001","ConnectionId":"0HNI5252LI4M5","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:01:46.4997737Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["2.0587"],"@tr":"c5b3d88253d194b649cd63cea9395475","@sp":"c318a157daa532e8","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":2.0587,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M6:00000001","traceId":"0HNI5252LI4M6:00000001","correlationId":"9dfecadd-ab18-4a4b-a675-8713b147a3ba","RequestId":"0HNI5252LI4M6:00000001","ConnectionId":"0HNI5252LI4M6","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:03.0817382Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4453"],"@tr":"24678f09b42e5e38549c5c961b496861","@sp":"0eff3757dc592581","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4453,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M7:00000001","traceId":"0HNI5252LI4M7:00000001","correlationId":"5fd42dfe-c775-4e68-8162-82512cf2fca9","RequestId":"0HNI5252LI4M7:00000001","ConnectionId":"0HNI5252LI4M7","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:05.1250570Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.5693"],"@tr":"532b6ec9b4a5ce7e74e2b87a7b1f0e78","@sp":"557fb300bf17ea84","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.5693,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M8:00000001","traceId":"0HNI5252LI4M8:00000001","correlationId":"281835e0-cea1-4188-a31c-df85e7838b6b","RequestId":"0HNI5252LI4M8:00000001","ConnectionId":"0HNI5252LI4M8","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:06.4649612Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4298"],"@tr":"e827db0b784543bc91d9be6960b49443","@sp":"688c27839a8de244","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4298,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4M9:00000001","traceId":"0HNI5252LI4M9:00000001","correlationId":"9b1ccfe5-391c-41c9-b561-e3314766018e","RequestId":"0HNI5252LI4M9:00000001","ConnectionId":"0HNI5252LI4M9","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:06.9608965Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4797"],"@tr":"dd4465ffd11483bb96a03c0710ad2e90","@sp":"240b351dba3ff72a","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4797,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MA:00000001","traceId":"0HNI5252LI4MA:00000001","correlationId":"51d8a4df-badc-40a9-b5aa-f6e752f93c30","RequestId":"0HNI5252LI4MA:00000001","ConnectionId":"0HNI5252LI4MA","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:07.4796130Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4043"],"@tr":"d1f5f8d25f93ecbe14eaa873fdb61225","@sp":"022ee4da243b3bc1","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4043,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MB:00000001","traceId":"0HNI5252LI4MB:00000001","correlationId":"5e5e5b10-6b8a-4e3e-b862-1574cc253e6d","RequestId":"0HNI5252LI4MB:00000001","ConnectionId":"0HNI5252LI4MB","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:08.0307220Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.3977"],"@tr":"aaf10b2728a728ee94eca05f516d33f7","@sp":"b725b0b033391513","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.3977,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MC:00000001","traceId":"0HNI5252LI4MC:00000001","correlationId":"95f984c1-d253-4cdc-b66e-81fe1eecb9aa","RequestId":"0HNI5252LI4MC:00000001","ConnectionId":"0HNI5252LI4MC","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:08.8501895Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4197"],"@tr":"5ea2a84925d15157d3a36f95bb3898ce","@sp":"fdcb3056860a3fbe","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4197,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MD:00000001","traceId":"0HNI5252LI4MD:00000001","correlationId":"37beae67-050e-4ff2-8603-a99039b0551e","RequestId":"0HNI5252LI4MD:00000001","ConnectionId":"0HNI5252LI4MD","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:09.2697313Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4983"],"@tr":"0096f7184b1b2db0313af8160ee4a86e","@sp":"137b0084e0f7e4c6","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4983,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4ME:00000001","traceId":"0HNI5252LI4ME:00000001","correlationId":"ed472d53-cf3e-4624-8e9b-3550f0bf0967","RequestId":"0HNI5252LI4ME:00000001","ConnectionId":"0HNI5252LI4ME","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:09.7481309Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.5226"],"@tr":"f7d57ac8b824bb51dfc19edddd3c41f1","@sp":"7346fa4f7b1cde3a","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.5226,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MF:00000001","traceId":"0HNI5252LI4MF:00000001","correlationId":"e1ce5d93-d9d1-48cd-9e06-8db6c8ca06b9","RequestId":"0HNI5252LI4MF:00000001","ConnectionId":"0HNI5252LI4MF","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:10.0204731Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.5346"],"@tr":"1546d0852845063d4ad8f49fe54ca158","@sp":"e9bc950cbb3f0d78","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.5346,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MG:00000001","traceId":"0HNI5252LI4MG:00000001","correlationId":"672762e6-e95d-4aea-98bb-fe2896bcec7a","RequestId":"0HNI5252LI4MG:00000001","ConnectionId":"0HNI5252LI4MG","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:10.5368290Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.5173"],"@tr":"37a0ebbe28875f2b0dc7ec37f28644ef","@sp":"9e6e7b9d210eb1f3","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.5173,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MH:00000001","traceId":"0HNI5252LI4MH:00000001","correlationId":"2413d77f-3946-423f-9dd4-e5fd6d57858c","RequestId":"0HNI5252LI4MH:00000001","ConnectionId":"0HNI5252LI4MH","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:10.8021435Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4728"],"@tr":"ef9f6afd832399bfc27854d58953402d","@sp":"d8c204e4289f1398","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4728,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MI:00000001","traceId":"0HNI5252LI4MI:00000001","correlationId":"7c70f24b-bc1c-4f5b-baf2-24c0efe79705","RequestId":"0HNI5252LI4MI:00000001","ConnectionId":"0HNI5252LI4MI","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:11.0803548Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4015"],"@tr":"71aa68a5d38dcc6c9c540ebd0c8983a0","@sp":"fb814c50253d4dd9","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4015,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MJ:00000001","traceId":"0HNI5252LI4MJ:00000001","correlationId":"50460d24-f9b9-4240-9023-136758932582","RequestId":"0HNI5252LI4MJ:00000001","ConnectionId":"0HNI5252LI4MJ","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":19,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:11.3507546Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.5184"],"@tr":"9d0afab6028345afcfdcd42c2d5b6e8e","@sp":"4c3780c9778c0283","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.5184,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MK:00000001","traceId":"0HNI5252LI4MK:00000001","correlationId":"863a38aa-f8df-4c14-b959-d85bc89356f0","RequestId":"0HNI5252LI4MK:00000001","ConnectionId":"0HNI5252LI4MK","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:11.8546431Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4652"],"@tr":"c5bd1fe357b44b02db0a7026930dde75","@sp":"81cf420e529a668c","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4652,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4ML:00000001","traceId":"0HNI5252LI4ML:00000001","correlationId":"5a373375-10d6-45ea-92f8-17a3075c3d3b","RequestId":"0HNI5252LI4ML:00000001","ConnectionId":"0HNI5252LI4ML","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:13.5147096Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.6495"],"@tr":"667fd69f45cefbc4eefa5fa3d496072e","@sp":"edc65cf96b11548f","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=SkuSub&level=Sku","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.6495,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MM:00000001","traceId":"0HNI5252LI4MM:00000001","correlationId":"fedd372c-758c-401d-b853-f2adcef219a7","RequestId":"0HNI5252LI4MM:00000001","ConnectionId":"0HNI5252LI4MM","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:02:15.7192726Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.5881"],"@tr":"3e5a7800fcf363b19c026a570193a536","@sp":"95609e8d35312b42","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.5881,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MN:00000001","traceId":"0HNI5252LI4MN:00000001","correlationId":"928cf512-99c6-4821-b105-32551c349991","RequestId":"0HNI5252LI4MN:00000001","ConnectionId":"0HNI5252LI4MN","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":20,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:13:57.2855680Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["2.7687"],"@tr":"ec1f2e6d184376f61799e9e430160940","@sp":"7c37d71e4e3f83e5","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":2.7687,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MO:00000001","traceId":"0HNI5252LI4MO:00000001","correlationId":"4fe8ccbd-4dea-473d-9be7-2e8a013ea1be","RequestId":"0HNI5252LI4MO:00000001","ConnectionId":"0HNI5252LI4MO","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":22,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T07:14:45.7404211Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.5920"],"@tr":"d238bf775fa50e6a4c02142a1e005afe","@sp":"6b2c1e5d0b7318b6","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.592,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MP:00000001","traceId":"0HNI5252LI4MP:00000001","correlationId":"8bdcf49d-c703-4d54-9001-89ed178ff307","RequestId":"0HNI5252LI4MP:00000001","ConnectionId":"0HNI5252LI4MP","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:01.7337370Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["2.1054"],"@tr":"6de38249cb14d8fdfbd01c2953a4e074","@sp":"f12f0aedd551af26","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":2.1054,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MQ:00000001","traceId":"0HNI5252LI4MQ:00000001","correlationId":"aa22676c-c52e-4df8-8353-0b1b22faac54","RequestId":"0HNI5252LI4MQ:00000001","ConnectionId":"0HNI5252LI4MQ","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":25,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:09.8425588Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4398"],"@tr":"46d4cfeccbb455c9767f596b4456c721","@sp":"6460dd7a9403e701","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4398,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MR:00000001","traceId":"0HNI5252LI4MR:00000001","correlationId":"5af87040-1c00-420f-9cc2-d555e2eb634b","RequestId":"0HNI5252LI4MR:00000001","ConnectionId":"0HNI5252LI4MR","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":25,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:10.5696736Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4560"],"@tr":"6b812d59ddc6b7945ded813a9b3a0164","@sp":"7bcaffa112dfbefc","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.456,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MS:00000001","traceId":"0HNI5252LI4MS:00000001","correlationId":"0a587b4d-04c6-4504-bffd-aeb9c1f6cc4c","RequestId":"0HNI5252LI4MS:00000001","ConnectionId":"0HNI5252LI4MS","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":18,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:11.5277673Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.3714"],"@tr":"a6b49c8ce5aac0b175797b56a5b527a4","@sp":"e24158a97bd12dee","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=Sku","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.3714,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MT:00000001","traceId":"0HNI5252LI4MT:00000001","correlationId":"2930c187-fb38-40bf-aa8d-fb8d1867b415","RequestId":"0HNI5252LI4MT:00000001","ConnectionId":"0HNI5252LI4MT","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":18,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:13.4200437Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4179"],"@tr":"688de6ffd18db02b5e7403ffb149937d","@sp":"58c2749741deaef5","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4179,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MU:00000001","traceId":"0HNI5252LI4MU:00000001","correlationId":"9a94dce9-e16b-4932-8333-e4d4bce870a3","RequestId":"0HNI5252LI4MU:00000001","ConnectionId":"0HNI5252LI4MU","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:15.3864662Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.6855"],"@tr":"40dfd39cc64118da3ae5e4e088fe404d","@sp":"f1056f8b5ec89f9f","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=SkuSub","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.6855,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4MV:00000001","traceId":"0HNI5252LI4MV:00000001","correlationId":"802db7e4-84d2-4488-9bfe-e5a7cd88e25c","RequestId":"0HNI5252LI4MV:00000001","ConnectionId":"0HNI5252LI4MV","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:16.2465709Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.4876"],"@tr":"6087276465e74b93be1502762a3c8817","@sp":"00c01e7238d4fcc2","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=SkuSub&level=Sku","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.4876,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4N0:00000001","traceId":"0HNI5252LI4N0:00000001","correlationId":"8a701549-3315-4112-9b0f-11dba96e96d5","RequestId":"0HNI5252LI4N0:00000001","ConnectionId":"0HNI5252LI4N0","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:25.9082987Z","@mt":"Planning updated: skuSubId={skuSubId} units={units} amount={amount}","@tr":"f148bccb43e1c86313e41260015cf1cf","@sp":"1d852ae59b2bd8ab","skuSubId":203,"units":48,"amount":139.20,"SourceContext":"Services.Services.PlannerService","RequestId":"0HNI5252LI4N1:00000001","RequestPath":"/api/planner","ConnectionId":"0HNI5252LI4N1","requestId":"0HNI5252LI4N1:00000001","traceId":"0HNI5252LI4N1:00000001","correlationId":"72c420a3-9e84-42b4-a42b-4a1aac141bd0","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:25.9082930Z","@mt":"Planning updated: skuSubId={skuSubId} units={units} amount={amount}","@tr":"2e1a0b1a0172c7a79e34c4d81a196d20","@sp":"67dd390350a52a1b","skuSubId":203,"units":48,"amount":139.20,"SourceContext":"Services.Services.PlannerService","RequestId":"0HNI5252LI4N2:00000001","RequestPath":"/api/planner","ConnectionId":"0HNI5252LI4N2","requestId":"0HNI5252LI4N2:00000001","traceId":"0HNI5252LI4N2:00000001","correlationId":"b5dc6e3f-dbb7-4437-8bde-410153efbf0c","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":5,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:25.9083781Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["1.8947"],"@tr":"2e1a0b1a0172c7a79e34c4d81a196d20","@sp":"67dd390350a52a1b","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"","contentType":"application/json","contentLength":35,"RequestMethod":"PATCH","RequestPath":"/api/planner","StatusCode":204,"Elapsed":1.8947,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4N2:00000001","traceId":"0HNI5252LI4N2:00000001","correlationId":"b5dc6e3f-dbb7-4437-8bde-410153efbf0c","RequestId":"0HNI5252LI4N2:00000001","ConnectionId":"0HNI5252LI4N2","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":5,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:25.9083781Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["4.1730"],"@tr":"f148bccb43e1c86313e41260015cf1cf","@sp":"1d852ae59b2bd8ab","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"","contentType":"application/json","contentLength":35,"RequestMethod":"PATCH","RequestPath":"/api/planner","StatusCode":204,"Elapsed":4.173,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4N1:00000001","traceId":"0HNI5252LI4N1:00000001","correlationId":"72c420a3-9e84-42b4-a42b-4a1aac141bd0","RequestId":"0HNI5252LI4N1:00000001","ConnectionId":"0HNI5252LI4N1","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:26.1705579Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["1.4145"],"@tr":"7d2df8e30490bc85db95fc30e1f7ded8","@sp":"43f743c07707491e","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=SkuSub&level=Sku","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":1.4145,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4N3:00000001","traceId":"0HNI5252LI4N3:00000001","correlationId":"2457d583-3047-4fc1-9a37-b4412c5852d0","RequestId":"0HNI5252LI4N3:00000001","ConnectionId":"0HNI5252LI4N3","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
+{"@t":"2025-12-27T08:03:26.2322300Z","@mt":"HTTP {RequestMethod} {RequestPath} ответ {StatusCode} за {Elapsed:0.0000} мс","@r":["0.3463"],"@tr":"52ba8840af9bf34d0f96ab2b29ce658b","@sp":"0ad700092162f322","requestHost":"localhost:5000","requestScheme":"http","remoteIp":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0","queryString":"?level=Total&level=SkuSub&level=Sku","contentType":"application/json","contentLength":null,"RequestMethod":"GET","RequestPath":"/api/planner","StatusCode":200,"Elapsed":0.3463,"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","requestId":"0HNI5252LI4N4:00000001","traceId":"0HNI5252LI4N4:00000001","correlationId":"c902bb1a-10b8-4950-805b-9a533e66e8be","RequestId":"0HNI5252LI4N4:00000001","ConnectionId":"0HNI5252LI4N4","MachineName":"DESKTOP-4OU1KE1","EnvironmentUserName":"DESKTOP-4OU1KE1\\Askja","ProcessId":23748,"ProcessName":"Api","ThreadId":23,"service":"planner-api","application":"Api","environment":"Development","assembly":"Api"}
